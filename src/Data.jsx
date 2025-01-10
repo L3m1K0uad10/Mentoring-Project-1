@@ -10,7 +10,7 @@ const FruitData = [
     {
         id : 1,
         name : "Mango",
-        price : 1.90,
+        price : 1.92,
         vitamins : [ "vitamin A", "vitamin B6", "vitamin C", "vitamin K", "vitamin E", "Folate"],
         image : MangoImage
     },
@@ -24,7 +24,7 @@ const FruitData = [
     {
         id : 3,
         name : "Guava",
-        price : 1.70,
+        price : 1.71,
         vitamins : [ "vitamin A", "B vitamins", "vitamin C", "vitamin E"],
         image : GuavaImage
     },

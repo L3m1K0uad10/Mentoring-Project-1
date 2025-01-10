@@ -1,4 +1,4 @@
-#root, .app-container {
+body ,#root, .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,55 +51,68 @@ h3 {
 /* card */
 .fruits-display-container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 60px;
-  row-gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px; 
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .fruit-card {
-  width: 300px;
-  height: 500px;
-  /* border: 2px solid #EE2225; */
-  margin-top: 60px;
+  width: 300px; 
+  height: 580px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+  border: 1px solid #ddd; 
+  border-radius: 10px;
 }
+
 .fruit-card img {
-  width: 300px;
-  height: auto;
-  margin-bottom: 0px;
+  width: 100%; 
+  height: 40%; 
+  object-fit: contain;
 }
+
 
 .fruit-card h4 {
   text-align: center;
-  margin-bottom: 0;
-}
-
-.card-labels-container ul {
-  width: 50%;
-}
-
-.card-labels-container div {
-  width: 50%;
-}
-
-.card-labels-container div p {
-  font-size: 36px;
-  font-weight: bold;
-  color: #EE2225;
+  margin: 10px 0; 
 }
 
 .card-labels-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  padding: 10px;
+}
+
+
+.card-labels-container ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  text-align: center; 
+}
+
+
+.card-labels-container div {
+  margin-top: 10px;
+}
+
+
+.card-labels-container div p {
+  font-size: 20px; 
+  font-weight: bold;
+  color: #EE2225;
 }
 
 .card-btns-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  width: 100%; 
+  padding: 10px 0;
 }
 
 .card-btns-container button {
@@ -107,4 +120,37 @@ h3 {
   font-size: 14px;
   font-weight: bold;
   border: 2px solid #EE2225;
+  border-radius: 5px; 
+  padding: 8px 16px;
+  color: #fff; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+.card-btns-container button:hover {
+  background-color: #cc1c1e; 
+}
+
+/* pagination container */
+.pagination-container {
+  width: 40px;
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 30px 0px;
+  background-color: #FCA81E;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

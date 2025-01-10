@@ -1,0 +1,110 @@
+#root, .app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 10px;
+}
+
+.form-action-btn {
+  margin-left: 10px;
+  padding: 10px 25px;
+}
+
+.form-container button {
+  padding: 10px 25px;
+}
+
+.form-action-btn, .form-container button {
+  background-color: #EE2225;
+  border: 2px solid #EE2225;
+  border-radius: .5rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* card */
+.fruits-display-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 60px;
+  row-gap: 60px;
+}
+
+.fruit-card {
+  width: 300px;
+  height: 500px;
+  /* border: 2px solid #EE2225; */
+  margin-top: 60px;
+}
+.fruit-card img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.fruit-card h4 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.card-labels-container ul {
+  width: 50%;
+}
+
+.card-labels-container div {
+  width: 50%;
+}
+
+.card-labels-container div p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #EE2225;
+}
+
+.card-labels-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-btns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-btns-container button {
+  background-color: #EE2225;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #EE2225;
+}

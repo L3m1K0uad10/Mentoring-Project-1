@@ -32,7 +32,7 @@ function HomePage() {
 					<input className = "search-input" type = "text" placeholder = "search a fruit"/>
 					<input className = "form-action-btn" type = "submit" value = "search"/>
 				</form>
-				<Link className = 'button' to = "/sign/">add</Link>
+				<Link className = 'button' to = "/sign-in">add</Link>
 			</div>
 
 			<div className = "fruits-display-container">

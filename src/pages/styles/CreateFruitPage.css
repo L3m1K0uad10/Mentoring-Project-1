@@ -1,0 +1,67 @@
+
+.create-fruit-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.create-fruit-page-container h3 {
+    text-align: center;
+}
+
+.create-fruit-page-container h2 {
+    text-decoration: underline;
+    color: #FCA81E;
+}
+
+/* form */
+.create-fruit-page-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+}
+
+    /* form wrapper 1 */
+.create-fruit-page-form-wrapper-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.create-fruit-page-form-wrapper-1 .form-wrapper-1-inputfield {
+    width: 280px;
+    padding: 10px;
+}
+
+
+.Plus {
+    background-color: #FCA81E;
+    padding: 10px;
+    border: 1px solid #FCA81E;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Plus:hover {
+    background-color: #d78e17;
+}
+
+
+    /* form wrapper 2 */
+.create-fruit-page-form-wrapper-2 input {
+    padding: 10px 15px;
+    background-color: #FCA81E;
+    border: 1px solid #FCA81E;
+    border-radius: .25rem;
+    transition: background-color 0.3s ease;
+}
+
+.create-fruit-page-form-wrapper-2 input:hover {
+    background-color: #d78e17;
+}
+
+

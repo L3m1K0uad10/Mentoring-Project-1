@@ -1,17 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import './App.css';
+import './styles/HomePage.css';
 
-import Fruit from './components/FruitCard.jsx';
-import FruitData from './Data.jsx';
+import Fruit from '../components/FruitCard.jsx';
+import FruitData from '../Data.jsx';
 
-import Logo from "./assets/logo.png";
-import MangoImage from "./assets/Mango.png";
-import StrawBerryImage from "./assets/strawberry.png";
-
+import Logo from "../assets/logo.png";
 
 
-function App() {
+
+function HomePage() {
 
 	const FruitItem = FruitData.map((item) => {
     	return <Fruit 
@@ -24,7 +23,7 @@ function App() {
   	})
 
   	return (
-    	<div className = "app-container">
+    	<div className = "homepage-container">
       		<img className = 'logo' src = {Logo} alt = "fruit app logo"/>
       		<h3>DELICIOSO FRUITS</h3>
 
@@ -33,7 +32,7 @@ function App() {
 					<input className = "search-input" type = "text" placeholder = "search a fruit"/>
 					<input className = "form-action-btn" type = "submit" value = "search"/>
 				</form>
-				<button>add</button>
+				<Link className = 'button' to = "/sign/">add</Link>
 			</div>
 
 			<div className = "fruits-display-container">
@@ -57,4 +56,4 @@ function App() {
   	)
 }
 
-export default App
+export default HomePage;

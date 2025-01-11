@@ -1,0 +1,51 @@
+
+
+.signing-page-container h3 {
+    text-align: center;
+}
+
+/* form */
+
+.signing-page-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.signing-page-container form .input-type-1 {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid white;
+    border-radius: .25rem;
+}
+
+.signing-page-container form .input-type-2 {
+    margin-top: 20px;
+    background-color: #EE2225;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid #EE2225;
+    border-radius: .25rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.signing-page-container form .input-type-2:hover {
+    background-color: #cc1c1e; 
+}
+
+.signing-page-container form p {
+    font-size: small;
+}
+
+.signing-page-container form p a {
+    cursor: pointer;
+    color: #EE2225;
+}
+
+.signing-page-container form p a:hover {
+    color: #cc1c1e;
+}

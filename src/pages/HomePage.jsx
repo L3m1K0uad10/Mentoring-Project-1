@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ReactPaginate from 'react-paginate';
 
 import './styles/HomePage.css';
 
@@ -12,15 +13,27 @@ import Logo from "../assets/logo.png";
 
 function HomePage() {
 
-	const FruitItem = FruitData.map((item) => {
-    	return <Fruit 
-			key = {item.id}
-			name = {item.name}
-			price = {item.price}
-			vitamins = {item.vitamins}
-			image = {item.image}
+	const [fruits, setFruits] = useState(FruitData);
+	const [pageNumber, setPageNumber] = useState(0);
+
+	const fruitsPerPage = 4;
+	const pagesVisited = pageNumber * fruitsPerPage;
+
+	const displayFruits = fruits
+		.slice(pagesVisited, pagesVisited + fruitsPerPage)
+		.map((fruit) => {
+		return <Fruit 
+			key = {fruit.id}
+			name = {fruit.name}
+			price = {fruit.price}
+			vitamins = {fruit.vitamins}
+			image = {fruit.image}
 		/>
   	})
+
+	const changePage = ({selected}) => {
+		setPageNumber(selected);
+	}
 
   	return (
     	<div className = "homepage-container">
@@ -36,16 +49,23 @@ function HomePage() {
 			</div>
 
 			<div className = "fruits-display-container">
-				{FruitItem}
+				{displayFruits}
+				
 			</div>
 
 			<div className = "pagination-container">
-				{/* pagination container */}
-				<p>1</p>
-				<p>2</p>
-				<p>3</p>
-				<p>4</p>
-				<p>5</p>
+				<ReactPaginate
+				 	previousLabel = {null}
+					nextLabel = {null}
+					pageCount = {Math.ceil(fruits.length / fruitsPerPage)}
+					onPageChange = {changePage}
+					containerClassName ={"paginationBttns"}
+					previousLinkClassName = {"previousBttn"}
+					nextLinkClassName = {"nextBttn"}
+					disabledClassName = {"paginationDisabled"}
+					activeClassName = {"paginationActive"}
+					renderOnZeroPageCount={null}
+				/>
 			</div>
 
 			<footer>

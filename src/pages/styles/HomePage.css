@@ -144,8 +144,44 @@ h3 {
   gap: 30px;
 }
 
+.paginationBttns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-/* Footer */
+.paginationBttns li {
+  list-style: none;
+}
+
+.paginationBttns li a {
+  padding: 7px 13px;
+  background-color: #FCA81E;
+  border-radius: 100%;
+  color: white;
+}
+
+.paginationBttns li a:hover {
+  background-color: #c9881e;
+  cursor: pointer;
+}
+
+/* .previous .next {
+  display: none;
+} */
+
+.paginationBttns li.paginationActive a{
+  background-color: #EE2225;
+  padding: 10px 16px;
+}
+
+.paginationBttns li.previous a, .paginationBttns li.next a {
+  display: none;
+}
+
+
+/* Footer */ 
 
 footer {
   padding: 30px 0px;

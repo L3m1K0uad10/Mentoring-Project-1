@@ -4,6 +4,8 @@ import GuavaImage from "./assets/guava.png";
 import OrangeImage from "./assets/orange.png";
 import BananaImage from "./assets/banana.png";
 import AppleImage from "./assets/apple.png";
+import PineappleImage from "./assets/pineapple.png";
+import GrapesImage from "./assets/grapes.png";
 
 
 const FruitData = [
@@ -48,6 +50,20 @@ const FruitData = [
         price : 0.32,
         vitamins : [ "vitamin C", "vitamin E", "vitamin K", "vitamin A", "Folate"],
         image : AppleImage
+    },
+    {
+        id : 7,
+        name : "Pineapple",
+        price : 0.50,
+        vitamins : [ "vitamin C", "vitamin B6", "vitamin A", "Folate"],
+        image : PineappleImage
+    },
+    {
+        id : 8,
+        name : "Grapes",
+        price : 2.30,
+        vitamins : [ "vitamin C", "vitamin K", "Thiamine", "Riboflavin", "B6"],
+        image : GrapesImage
     }
 ]
 

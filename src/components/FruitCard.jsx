@@ -5,7 +5,7 @@ import React from "react";
 function Fruit(props) {
 
     const VitaminItem = props.vitamins.map(item => {
-        return <li>{item}</li>
+        return <li key = {item}>{item}</li>
     })
     
     return (

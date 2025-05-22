@@ -1,8 +1,11 @@
-# React + Vite
+# FRUIT APP: Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fruit web app for performing simple CRUD operation in other to give a glance of React-js how it works to my mentee
 
-Currently, two official plugins are available:
+It consists of:
+- a RESTFul api that will handle the CRUD operation, connecting the frontend with the backend
+[RESTFul api](https://github.com/L3m1K0uad10/Fruit-API)
+- a Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+By L3111.1
+Mentee: Abdrazak
